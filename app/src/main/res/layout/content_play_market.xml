@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_play_market"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kirill.lab1.PlayMarketActivity"
+    tools:showIn="@layout/activity_play_market">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:src="@drawable/pic1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button12"
+                        android:contentDescription="first pic" />
+
+                    <ImageButton
+                        android:src="@drawable/pic2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button13"
+                        android:contentDescription="second pic" />
+
+                    <ImageButton
+                        android:src="@drawable/pic3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button14"
+                        android:contentDescription="third pic" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:text="Лучшее"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button15"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff"
+                        tools:ignore="ButtonStyle,RtlHardcoded"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:text="Игры"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button16"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff"
+                        tools:ignore="RtlHardcoded"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:text="Категории"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button17"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff"
+                        tools:ignore="RtlHardcoded"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:text="Для всей семьи"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button18"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff"
+                        tools:ignore="RtlHardcoded"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:text="Выбор редакции"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button19"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#fff"
+                        tools:ignore="RtlHardcoded"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:text="Любителям аркад"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button27"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/category_button"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button23"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:drawablePadding="5dp"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button" />
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button22"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button26"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button21"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button20"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:text="Лучшие приложения и игры"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button28"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/category_button"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button29"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button" />
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button30"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button31"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button32"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button33"
+                        android:drawableTop="@mipmap/ic_launcher"
+                        android:gravity="left|bottom|center_vertical|center_horizontal"
+                        android:background="@drawable/apps_button"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<ImageButton-->
+                    <!--android:src="@drawable/pic1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/button12"-->
+                    <!--android:contentDescription="first pic" />-->
+
+                <!--<ImageButton-->
+                    <!--android:src="@drawable/pic2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button13"-->
+                    <!--android:contentDescription="second pic" />-->
+
+                <!--<ImageButton-->
+                    <!--android:src="@drawable/pic3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button14"-->
+                    <!--android:contentDescription="third pic" />-->
+
+            <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<Button-->
+                    <!--android:text="Лучшее"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button15"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--tools:ignore="ButtonStyle,RtlHardcoded"-->
+                    <!--android:padding="5dp" />-->
+
+                <!--<Button-->
+                    <!--android:text="Игры"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button16"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--tools:ignore="RtlHardcoded"-->
+                    <!--android:padding="5dp" />-->
+
+                <!--<Button-->
+                    <!--android:text="Категории"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button17"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--tools:ignore="RtlHardcoded"-->
+                    <!--android:padding="5dp" />-->
+
+                <!--<Button-->
+                    <!--android:text="Для всей семьи"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button18"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--tools:ignore="RtlHardcoded"-->
+                    <!--android:padding="5dp" />-->
+
+                <!--<Button-->
+                    <!--android:text="Выбор редакции"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button19"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--tools:ignore="RtlHardcoded"-->
+                    <!--android:padding="5dp" />-->
+
+            <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+
+        <!--<Button-->
+            <!--android:text="Любителям аркад"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/button27"-->
+            <!--android:gravity="left|center_vertical|center_horizontal"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/category_button"/>-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button23"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button" />-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button22"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button26"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button21"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button20"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+            <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+
+        <!--<Button-->
+            <!--android:text="Любителям аркад"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/button28"-->
+            <!--android:gravity="left|center_vertical|center_horizontal"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/category_button"/>-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal" >-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button29"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button" />-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button30"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button31"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button32"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+
+                <!--<Button-->
+                    <!--android:text="Button"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/button33"-->
+                    <!--android:drawableTop="@mipmap/ic_launcher"-->
+                    <!--android:background="@drawable/apps_button"/>-->
+            <!--</LinearLayout>-->
+        <!--</HorizontalScrollView>-->
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

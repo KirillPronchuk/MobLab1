@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:picker="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostBlack">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/editText3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/add_some_notes_here"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/new_note"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:id="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+
+</RelativeLayout>
